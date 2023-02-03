@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Garde d'animaux</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">   
+    </head>
+    <body>
+        <h1>Inscription de l'animal à faire garder</h1>
+        <form action="cible.php" method="GET">
+            <!--Champ text-->
+            <div>
+                <label for="name">Nom du propriétaire:</label>
+                <input id="name" type="text" name="name">
+            </div>
+            <!--Champ text-->
+            <div>
+                <label for="firstname">Prénom du propriétaire :</label>
+                <input id="firstname" type="text" name="firstname">
+            </div>
+            <!--Champ date-->
+            <div>
+                <label for="date_of_birth">Date de naissance du propriétaire :</label>
+                <input id="date_of_birth" type="date" name="date_of_birth">
+            </div>
+            <!--Liste déroulante-->
+            <div>
+                <label for="pet">Type d'animal à faire garder</label>
+                <select name="pet" id="pet">
+                    <option value="chien">Chien</option>
+                    <option value="chat">Chat</option>
+                    <option value="rongeur">Rongeur</option>
+                    <option value="poisson">Poisson</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+            <!--Champ de texte multi-ligne-->
+            <div>
+                <label for="message">Si vous avez choisit "autre" précédement, veuillez préciser de quel animal il s'agit :</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <!--Champ mail-->
+            <div>
+                <label for="email">Adresse mail du propriétaire :</label>
+                <input id="email" type="email" name="email">
+            </div>
+            <!--Champ de téléphone-->
+            <div>
+                <label for="tel">Numéro de téléphone du propriétaire :</label>
+                <input id="tel" type="tel" name="tel">
+            </div>
+            <!--Champ de fichier-->
+            <div>
+                <label for="vaccine_file">Dernière page de vaccin de l'animal :</label>
+                <input id="vaccine_file" type="file" name="vaccine_file">
+            </div>
+            <!--Bouton envoyer-->
+            <div>
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+    </body>
+</html>
