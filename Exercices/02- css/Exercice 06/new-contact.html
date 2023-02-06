@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ajouter un contact</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container_main">
+            <h1>Création d'un nouveau contact</h1>
+            <form action="cible.php" method="GET">
+                <!--Champ text-->
+                <div class="id_contact">
+                    <label for="name">Nom :</label>
+                    <input id="name" type="text" name="name" placeholder="Ex : Grimerd">
+                </div>
+                <!--Champ text--> 
+                <div class="id_contact">
+                    <label for="firstname">Prénom :</label>
+                    <input id="firstname" type="text" name="firstname" placeholder="Ex : Alice">
+                </div>
+                <!--Choix radio-->
+                <div class="choice_service">
+                    <p>Service :</p>
+                    <input id="buy" type="radio" name="unit"><label for="buy">Achat</label>
+                    <input id="sale" type="radio" name="unit"><label for="sale">Vente</label>
+                    <input id="sav" type="radio" name="unit"><label for="sav">SAV</label>
+                    <input id="delivery" type="radio" name="unit"><label for="delivery">Livraison</label>
+                </div>
+                <!--Bouton Ajouter-->
+                <div>
+                    <input type="submit" value="Ajouter">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

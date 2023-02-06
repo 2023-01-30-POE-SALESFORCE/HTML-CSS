@@ -1,0 +1,68 @@
+/*Styles commun aux 2 pages*/
+.container_main{
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+    color: #222222;
+}
+
+/*Page Liste de contact*/
+    /*Titres et container des boîtes de liste de la page*/
+.container_main h1, .container_main>div>h2, .container_box{
+    text-align: center;
+}
+    /*Boîtes des liste de fond vert*/
+.box_green{
+    background-color: #578957;
+}
+    /*Boîtes des liste de fond jaune*/
+.box_yellow{
+    background-color: #c7b878;
+}
+    /*L'ensemble des boîtes de liste*/
+.box_green, .box_yellow{
+    padding: 40px;
+    display: inline-block;
+    border: 2px solid black;
+}
+    /*Titres des boîtes de liste*/
+.box_green h2, .box_yellow h2{
+    text-transform: uppercase;
+    text-decoration: underline overline;
+}
+    /*Liste des boîtes de liste*/
+.box_green ol, .box_yellow ol{
+    text-align: left;
+}
+
+/*Page création d'un contact*/
+    /*formulaire*/
+.container_main>form{
+    width: 60%;
+    margin: auto;
+    background-color: #578957;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+    /*Labels et inputs prénom et nom*/
+.container_main>form>.id_contact>label,.container_main>form>.id_contact>input{
+    display: block;
+    font-size: 1.5rem;
+}
+    /*Champs texte*/
+.container_main>form>.id_contact>input{
+    margin: 10px;
+}
+    /*Champs à choix*/
+.container_main>form>.choice_service>input{
+    width: 20px;
+    height: 20px;
+}
+    /*Bouton envoyer*/
+.container_main>form>div>input[type="submit"]{
+    width: 200px;
+    padding: 5px;
+    margin-top: 10px;
+    color: #406040;
+    font-size: 1.25rem;
+}
