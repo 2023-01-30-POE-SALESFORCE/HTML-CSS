@@ -1,0 +1,59 @@
+/*Styles commun aux 2 pages*/
+.container_main{
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+    color: #222222;
+}
+
+/*Page Liste de contact*/
+    /*Titres et container des boîtes de liste de la page*/
+.container_main h1, .container_main>div>h2, .container_box{
+    text-align: center;
+}
+
+    /*Boîtes des liste de fond vert*/
+.box_green{
+    background-color: #578957;
+}
+    /*Boîtes des liste de fond jaune*/
+.box_yellow{
+    background-color: #c7b878;
+}
+    /*L'ensemble des boîtes de liste*/
+.box_green, .box_yellow{
+    padding: 40px;
+    border: 2px solid black;
+    margin: 2px 0;
+
+}
+
+    /*Titres des boîtes de liste*/
+.box_green h2, .box_yellow h2{
+    text-transform: uppercase;
+    text-decoration: underline overline;
+}
+    /*Liste des boîtes de liste*/
+.box_green ol, .box_yellow ol{
+    margin: auto;
+    text-align: center;
+    padding-left: 0;
+}
+
+/*Media queries*/
+
+@media screen and (min-width: 600px) {
+    /*Page Liste de contact*/
+    /*boîtes de liste de la page*/
+
+    .container_box div{
+        margin : 2px;
+        display: inline-block;
+    }
+        /*Liste des boîtes de liste*/
+    .box_green ol, .box_yellow ol{
+        text-align: left;
+        padding-left: 40px;
+    }
+}
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="mon premier site responsive">
+
+        <!--Bibliothèque css de Font-Awesome (permet d'avoir accès à beaucoup d'icônes utilisables sur ma page web et modifiable en css comme le texte)-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+        <!--Bibliothèque css de normalize(permet de "reset" tous les styles pour les mettre à l'identique sur tous les navigateurs.)-->
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <!--Mon fichier css-->
+        <link rel="stylesheet" href="css/styles.css">
+        <title>TP : mon premier site responsive</title>
+    </head>
+    <body>
+        <header>
+            <h1>Mon premier site responsive</h1>
+        </header>
+        <!--Menu de navigation principal-->
+        <nav class="nav_main">
+            <ul>
+                <li>
+                    <a href="#" title="page d'accueil'"><i class="fa-solid fa-house"></i> Accueil</a>
+                </li>
+                <li>
+                    <a href="#" title="page de notre histoire"><i class="fa-solid fa-pen-fancy"></i> Notre histoire</a>
+                </li>
+                <li>
+                    <a href="#" title="page de nos prestations"><i class="fa-solid fa-desktop"></i> Nos prestations</a>
+                </li>
+                <li>
+                    <a href="#" title="page de l'équipe"><i class="fa-solid fa-users"></i> L'équipe</a>
+                </li>
+                <li>
+                    <a href="#" title="page de contact"><i class="fa-solid fa-phone"></i> Nous contacter</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Mes sections-->
+            <!--Section de présentation-->
+        <section class="section_presentation">
+            <h2>Présentation succincte des services</h2>
+            <p>Lorem ipsum dolor sit amet <strong>consectetur</strong>, adipisicing elit. Quidem porro minus architecto? Nulla omnis ratione <strong>laudantium</strong> et veritatis repellendus totam inventore voluptate, unde corporis, alias <strong>veniam aliquid</strong> rerum error! Enim.</p>
+        </section>
+
+            <!--Bannière-->
+        <div class="banner"></div>
+
+            <!--Section des actualités-->
+        <section class="section_news">
+            <h2>Nos dernières actualités</h2>
+            <!-- Mes articles -->
+            <div class="articles">
+                <article class="article">
+                    <h3>Article 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolor facilis aperiam voluptatem expedita, nemo rem minus autem, quibusdam, similique a impedit et ratione ex at dolores ipsam accusantium obcaecati.</p>
+                </article>
+                <article class="article">
+                    <h3>Article 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos esse numquam unde laudantium nostrum odio placeat autem voluptate! Nesciunt eius ratione voluptatum repellendus! Cupiditate accusamus beatae optio ipsum autem.</p>
+                </article>
+                <article class="article">
+                    <h3>Article 3</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam recusandae ipsam hic voluptatibus, dolore iusto, enim mollitia cum assumenda ipsa quod dolorum incidunt. Laudantium atque totam nobis non in. Ullam.</p>
+                </article>
+            </div>
+        </section>
+
+            <!--Section de Fomulaire de contact-->
+        <section class="section_form">
+            <h2>Contactez-nous</h2>
+            <div class="line"></div>
+            <form class="form_main" action="cible.php" method="GET">
+                <div>
+                    <label for="name">Nom</label>
+                    <input required placeholder="Bob" name="name" id="name" type="text">
+                </div>
+                <div>
+                    <label for="email">Mail</label>
+                    <input required placeholder="bob@exemple.com" name="email" id="email" type="email">
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </section>
+
+        <!--Pied de page-->
+        <footer class="footer_main">
+            <nav class="footer_socials_links">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/" title="réseau social facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" title="réseau social twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.fr/" title="réseau social pinterest">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.snapchat.android&hl=fr&gl=US" title="réseau social snapchat">
+                            <i class="fa-brands fa-snapchat"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footer_links">
+                <ul>
+                    <li><a href="#" title="page de contact">Contacts</a></li>
+                    <li><a href="#" title="page des mentions légales">Mentions Légales</a></li>
+                    <li><a href="#" title="page des C.G.U">C.G.U.</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
