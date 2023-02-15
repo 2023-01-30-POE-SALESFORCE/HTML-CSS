@@ -43,10 +43,6 @@ header>h1{
     color:white;
     text-decoration: none;/*pour enlever le soulignement*/
 }
-.nav_main>ul>li>a:hover{/*utilisation de la pseudo-classe :hover pour changer de style au survol de la souris*/
-    color: #004d5a;
-    background-color: white;
-}
 
 /*Section de présentation*/
 .section_presentation{
@@ -163,6 +159,21 @@ header>h1{
     margin: 15px;
 }
 
+/*Changements au survol de la souris*/
+.section_form>.form_main>div>input[type="submit"]:hover{
+    background-color: rgb(31, 31, 31);
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-pinterest:hover, .fa-snapchat:hover{
+    text-shadow: 0px 0px 3px rgb(197, 197, 197);
+}
+
+.footer_links ul li a:hover{
+    color: #01849b;
+}
+.nav_main>ul>li>a:hover{/*utilisation de la pseudo-classe :hover pour changer de style au survol de la souris*/
+    color: #004d5a;
+    background-color: white;
+}
 
 /*MEDIA QUERIES*/
 
@@ -225,17 +236,5 @@ header>h1{
     }
     .section_form>.form_main>div>label{
         padding: 0 20px;
-    }
-
-    /*Changements au survol de la souris*/
-    .section_form>.form_main>div>input[type="submit"]:hover{
-        background-color: rgb(31, 31, 31);
-    }
-    .fa-facebook:hover, .fa-twitter:hover, .fa-pinterest:hover, .fa-snapchat:hover{
-        text-shadow: 0px 0px 3px rgb(197, 197, 197);
-    }
-
-    .footer_links ul li a:hover{
-        color: #01849b;
     }
 }
